@@ -16,17 +16,30 @@
 
 
 		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-IDEAnnotator.html">
+						IDEAnnotator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-IDEAnnotator.Helpers.html">
+						Helpers					</a>
+
+						</li>
+							</ul></li>
+			</ul>
 		</div>
 
+		<hr>
 
 
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Annotatable.html">Annotatable</a></li>
 				<li class="active"><a href="class-AnnotatePermissionChecker.html">AnnotatePermissionChecker</a></li>
-				<li><a href="class-DataObjectAnnotator.html">DataObjectAnnotator</a></li>
-				<li><a href="class-DataObjectAnnotatorTask.html">DataObjectAnnotatorTask</a></li>
 			</ul>
 
 
@@ -52,6 +65,8 @@
 			<li>
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
+			<li>
+<span>Package</span>			</li>
 			<li class="active">
 <span>Class</span>			</li>
 		</ul>
@@ -73,7 +88,8 @@
 	<div class="description">
 	<p>Class AnnotatePermissionChecker</p>
 
-<p>Helper to check if the class called can be annotated</p>
+<p>Helperclass to check if the current class or module is allowed to be annotated.
+This is abstracted from @see DataObjectAnnotator to separate and clean up.</p>
 	</div>
 
 
@@ -88,9 +104,9 @@
 		
 		
 		
-		
+		<b>Package:</b> <a href="package-IDEAnnotator.html">IDEAnnotator</a>\<a href="package-IDEAnnotator.Helpers.html">Helpers</a><br>
 
-			<b>Located at</b> <a href="source-class-AnnotatePermissionChecker.html#3-67" title="Go to source code">code/Helpers/AnnotatePermissionChecker.php</a>
+			<b>Located at</b> <a href="source-class-AnnotatePermissionChecker.html#3-70" title="Go to source code">code/Helpers/AnnotatePermissionChecker.php</a>
 		<br>
 	</div>
 
@@ -110,7 +126,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_classNameIsAllowed">#</a>
-		<code><a href="source-class-AnnotatePermissionChecker.html#10-35" title="Go to source code">classNameIsAllowed</a>( <span> <var>$className</var></span> )</code>
+		<code><a href="source-class-AnnotatePermissionChecker.html#13-38" title="Go to source code">classNameIsAllowed</a>( <span> <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Check if a DataObject or DataExtension subclass is allowed by checking if the file
@@ -153,7 +169,7 @@ The permission is checked by matching the filePath and modulePath</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_moduleIsAllowed">#</a>
-		<code><a href="source-class-AnnotatePermissionChecker.html#37-48" title="Go to source code">moduleIsAllowed</a>( <span> <var>$moduleName</var></span> )</code>
+		<code><a href="source-class-AnnotatePermissionChecker.html#40-51" title="Go to source code">moduleIsAllowed</a>( <span> <var>$moduleName</var></span> )</code>
 
 		<div class="description short">
 			<p>Check if a module is in the $allowed_modules array
@@ -194,7 +210,7 @@ Required for the buildTask.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getClassFilePath">#</a>
-		<code><a href="source-class-AnnotatePermissionChecker.html#50-65" title="Go to source code">getClassFilePath</a>( <span> <var>$className</var></span> )</code>
+		<code><a href="source-class-AnnotatePermissionChecker.html#53-68" title="Go to source code">getClassFilePath</a>( <span> <var>$className</var></span> )</code>
 
 		<div class="description short">
 			
