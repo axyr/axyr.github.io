@@ -25,8 +25,23 @@
 
 						<ul>
 				<li>
+					<a href="package-IDEAnnotator.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Extensions.html">
+						Extensions					</a>
+
+						</li>
+				<li>
 					<a href="package-IDEAnnotator.Helpers.html">
 						Helpers					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Tasks.html">
+						Tasks					</a>
 
 						</li>
 							</ul></li>
@@ -39,9 +54,7 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Annotatable.html">Annotatable</a></li>
 				<li class="active"><a href="class-DataObjectAnnotator.html">DataObjectAnnotator</a></li>
-				<li><a href="class-DataObjectAnnotatorTask.html">DataObjectAnnotatorTask</a></li>
 			</ul>
 
 
@@ -125,9 +138,9 @@ Object
 		
 		
 		
-		<b>Package:</b> <a href="package-IDEAnnotator.html">IDEAnnotator</a><br>
+		<b>Package:</b> <a href="package-IDEAnnotator.html">IDEAnnotator</a>\<a href="package-IDEAnnotator.Core.html">Core</a><br>
 
-			<b>Located at</b> <a href="source-class-DataObjectAnnotator.html#3-456" title="Go to source code">code/DataObjectAnnotator.php</a>
+			<b>Located at</b> <a href="source-class-DataObjectAnnotator.html#3-459" title="Go to source code">code/DataObjectAnnotator.php</a>
 		<br>
 	</div>
 
@@ -147,7 +160,7 @@ Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#93-100" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#96-103" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			
@@ -177,7 +190,7 @@ Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#_annotateModule">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#102-128" title="Go to source code">annotateModule</a>( <span>string <var>$moduleName</var></span>, <span>boolean|false <var>$undo</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#105-131" title="Go to source code">annotateModule</a>( <span>string <var>$moduleName</var></span>, <span>boolean|false <var>$undo</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -219,7 +232,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_annotateDataObject">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#130-162" title="Go to source code">annotateDataObject</a>( <span>string <var>$className</var></span>, <span>boolean|false <var>$undo</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#133-165" title="Go to source code">annotateDataObject</a>( <span>string <var>$className</var></span>, <span>boolean|false <var>$undo</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -260,7 +273,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_undoDataObject">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#164-187" title="Go to source code">undoDataObject</a>( <span> <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#167-190" title="Go to source code">undoDataObject</a>( <span> <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Revert the file to its original state without the generated docblock from this module</p>
@@ -303,7 +316,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFileContentWithAnnotations">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#204-236" title="Go to source code">getFileContentWithAnnotations</a>( <span>String <var>$fileContent</var></span>, <span>String <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#207-239" title="Go to source code">getFileContentWithAnnotations</a>( <span>String <var>$fileContent</var></span>, <span>String <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Get the file and have the ORM Properties generated.</p>
@@ -344,7 +357,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFileContentWithoutAnnotations">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#238-260" title="Go to source code">getFileContentWithoutAnnotations</a>( <span> <var>$fileContent</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#241-263" title="Go to source code">getFileContentWithoutAnnotations</a>( <span> <var>$fileContent</var></span> )</code>
 
 		<div class="description short">
 			<p>Get the literal contents of the DataObject file.</p>
@@ -383,7 +396,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateORMProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#263-282" title="Go to source code">generateORMProperties</a>( <span>String <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#266-285" title="Go to source code">generateORMProperties</a>( <span>String <var>$className</var></span> )</code>
 
 		<div class="description short">
 			
@@ -422,7 +435,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateORMOwnerProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#284-308" title="Go to source code">generateORMOwnerProperties</a>( <span>string <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#287-311" title="Go to source code">generateORMOwnerProperties</a>( <span>string <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Generate the Owner-properties for extensions.</p>
@@ -457,7 +470,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateORMDBProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#311-341" title="Go to source code">generateORMDBProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#314-344" title="Go to source code">generateORMDBProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Generate the $db property values.</p>
@@ -496,7 +509,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateORMBelongsToProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#343-359" title="Go to source code">generateORMBelongsToProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#346-363" title="Go to source code">generateORMBelongsToProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Generate the $belongs_to property values.</p>
@@ -535,7 +548,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateORMHasOneProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#361-381" title="Go to source code">generateORMHasOneProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#365-384" title="Go to source code">generateORMHasOneProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Generate the $has_one property and method values.</p>
@@ -574,7 +587,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateORMHasManyProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#383-400" title="Go to source code">generateORMHasManyProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#386-403" title="Go to source code">generateORMHasManyProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Generate the $has_many method values.</p>
@@ -613,7 +626,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateORMManyManyProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#402-418" title="Go to source code">generateORMManyManyProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#405-421" title="Go to source code">generateORMManyManyProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Generate the $many_many method values.</p>
@@ -652,7 +665,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateORMBelongsManyManyProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#420-436" title="Go to source code">generateORMBelongsManyManyProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#423-439" title="Go to source code">generateORMBelongsManyManyProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Generate the $belongs_many_many method values.</p>
@@ -691,7 +704,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generateORMExtensionsProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#438-455" title="Go to source code">generateORMExtensionsProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#441-458" title="Go to source code">generateORMExtensionsProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>Generate the mixins for DataExtensions</p>
@@ -818,31 +831,6 @@ within a module.</p></dd>
 			</div>
 		</td>
 	</tr>
-	<tr data-order="annotatePermissionChecker" id="$annotatePermissionChecker">
-		<td class="attributes"><code>
-			protected  
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#66" title="Go to source code"><var>$annotatePermissionChecker</var></a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$annotatePermissionChecker" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
 	<tr data-order="classes" id="$classes">
 		<td class="attributes"><code>
 			protected  
@@ -850,7 +838,7 @@ within a module.</p></dd>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#68-72" title="Go to source code"><var>$classes</var></a>
+				<a href="source-class-DataObjectAnnotator.html#71-75" title="Go to source code"><var>$classes</var></a>
 
 			<div class="description short">
 				<p>All classes that subclass DataObject</p>
@@ -875,7 +863,7 @@ within a module.</p></dd>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#74-78" title="Go to source code"><var>$extensionClasses</var></a>
+				<a href="source-class-DataObjectAnnotator.html#77-81" title="Go to source code"><var>$extensionClasses</var></a>
 
 			<div class="description short">
 				<p>All classes that subclass Object</p>
@@ -900,7 +888,7 @@ within a module.</p></dd>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#80-85" title="Go to source code"><var>$dataExtensions</var></a>
+				<a href="source-class-DataObjectAnnotator.html#83-88" title="Go to source code"><var>$dataExtensions</var></a>
 
 			<div class="description short">
 				<p>List of all objects, so we can find the extensions.</p>
@@ -925,7 +913,7 @@ within a module.</p></dd>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#87-91" title="Go to source code"><var>$resultString</var></a>
+				<a href="source-class-DataObjectAnnotator.html#90-94" title="Go to source code"><var>$resultString</var></a>
 
 			<div class="description short">
 				<p>Overall string for dataset.</p>
