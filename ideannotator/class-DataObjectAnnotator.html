@@ -35,6 +35,11 @@
 
 						</li>
 				<li>
+					<a href="package-IDEAnnotator.Generators.html">
+						Generators					</a>
+
+						</li>
+				<li>
 					<a href="package-IDEAnnotator.Helpers.html">
 						Helpers					</a>
 
@@ -140,7 +145,7 @@ Object
 		
 		<b>Package:</b> <a href="package-IDEAnnotator.html">IDEAnnotator</a>\<a href="package-IDEAnnotator.Core.html">Core</a><br>
 
-			<b>Located at</b> <a href="source-class-DataObjectAnnotator.html#3-459" title="Go to source code">code/DataObjectAnnotator.php</a>
+			<b>Located at</b> <a href="source-class-DataObjectAnnotator.html#3-229" title="Go to source code">code/DataObjectAnnotator.php</a>
 		<br>
 	</div>
 
@@ -160,14 +165,14 @@ Object
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#96-103" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#89-101" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
-			
+			<p>DataObjectAnnotator constructor.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>DataObjectAnnotator constructor.</p>
 
 
 
@@ -183,14 +188,14 @@ Object
 		<td class="attributes"><code>
 			 public 
 
-			false
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_annotateModule">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#105-131" title="Go to source code">annotateModule</a>( <span>string <var>$moduleName</var></span>, <span>boolean|false <var>$undo</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#103-126" title="Go to source code">annotateModule</a>( <span>string <var>$moduleName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -203,15 +208,13 @@ Object
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$moduleName</var></dt>
-					<dd></dd>
-					<dt><var>$undo</var></dt>
 					<dd><p>Generate docblock for all subclasses of DataObjects and DataExtenions
 within a module.</p></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					false<br>|| void
+					boolean
 				</div>
 
 
@@ -232,7 +235,7 @@ within a module.</p></dd>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_annotateDataObject">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#133-165" title="Go to source code">annotateDataObject</a>( <span>string <var>$className</var></span>, <span>boolean|false <var>$undo</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-DataObjectAnnotator.html#128-158" title="Go to source code">annotateDataObject</a>( <span>string <var>$className</var></span> )</code>
 
 		<div class="description short">
 			
@@ -245,8 +248,6 @@ within a module.</p></dd>
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$className</var></dt>
-					<dd></dd>
-					<dt><var>$undo</var></dt>
 					<dd>Generate docblock for a single subclass of DataObject or DataExtenions</dd>
 				</dl></div>
 
@@ -261,10 +262,51 @@ within a module.</p></dd>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="undoDataObject" id="_undoDataObject">
+	<tr data-order="getFileContentWithAnnotations" id="_getFileContentWithAnnotations">
 
 		<td class="attributes"><code>
-			 public 
+			 protected 
+
+			string|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFileContentWithAnnotations">#</a>
+		<code><a href="source-class-DataObjectAnnotator.html#160-193" title="Go to source code">getFileContentWithAnnotations</a>( <span>String <var>$fileContent</var></span>, <span>String <var>$className</var></span> )</code>
+
+		<div class="description short">
+			<p>Get the file and have the ORM Properties generated.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the file and have the ORM Properties generated.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fileContent</var></dt>
+					<dd></dd>
+					<dt><var>$className</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isEnabled" id="_isEnabled">
+
+		<td class="attributes"><code>
+			 public static
 
 			boolean
 			
@@ -272,22 +314,17 @@ within a module.</p></dd>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_undoDataObject">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#167-190" title="Go to source code">undoDataObject</a>( <span> <var>$className</var></span> )</code>
+		<a class="anchor" href="#_isEnabled">#</a>
+		<code><a href="source-class-DataObjectAnnotator.html#195-201" title="Go to source code">isEnabled</a>( )</code>
 
 		<div class="description short">
-			<p>Revert the file to its original state without the generated docblock from this module</p>
+			
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Revert the file to its original state without the generated docblock from this module</p>
+			
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$className</var></dt>
-					<dd></dd>
-				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
@@ -295,48 +332,72 @@ within a module.</p></dd>
 				</div>
 
 
-				<h4>See</h4>
-				<div class="list">
-						removePHPDocBlock<br>
-				</div>
 
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getFileContentWithAnnotations" id="_getFileContentWithAnnotations">
+	<tr data-order="setEnabled" id="_setEnabled">
 
 		<td class="attributes"><code>
-			 protected 
+			 public static
 
-			mixed|
+			
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getFileContentWithAnnotations">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#207-239" title="Go to source code">getFileContentWithAnnotations</a>( <span>String <var>$fileContent</var></span>, <span>String <var>$className</var></span> )</code>
+		<a class="anchor" href="#_setEnabled">#</a>
+		<code><a href="source-class-DataObjectAnnotator.html#203-209" title="Go to source code">setEnabled</a>( <span>boolean <var>$enabled</var></span> )</code>
 
 		<div class="description short">
-			<p>Get the file and have the ORM Properties generated.</p>
+			
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Get the file and have the ORM Properties generated.</p>
+			
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$fileContent</var></dt>
-					<dd></dd>
-					<dt><var>$className</var></dt>
+					<dt><var>$enabled</var></dt>
 					<dd></dd>
 				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEnabledModules" id="_getEnabledModules">
+
+		<td class="attributes"><code>
+			 public static
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEnabledModules">#</a>
+		<code><a href="source-class-DataObjectAnnotator.html#211-217" title="Go to source code">getEnabledModules</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
 
 				<h4>Returns</h4>
 				<div class="list">
-					mixed|
+					array
 				</div>
 
 
@@ -345,58 +406,19 @@ within a module.</p></dd>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getFileContentWithoutAnnotations" id="_getFileContentWithoutAnnotations">
+	<tr data-order="setEnabledModules" id="_setEnabledModules">
 
 		<td class="attributes"><code>
-			 protected 
+			 public static
 
-			mixed
+			
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getFileContentWithoutAnnotations">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#241-263" title="Go to source code">getFileContentWithoutAnnotations</a>( <span> <var>$fileContent</var></span> )</code>
-
-		<div class="description short">
-			<p>Get the literal contents of the DataObject file.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Get the literal contents of the DataObject file.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$fileContent</var></dt>
-					<dd></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					mixed
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="generateORMProperties" id="_generateORMProperties">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_generateORMProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#266-285" title="Go to source code">generateORMProperties</a>( <span>String <var>$className</var></span> )</code>
+		<a class="anchor" href="#_setEnabledModules">#</a>
+		<code><a href="source-class-DataObjectAnnotator.html#219-225" title="Go to source code">setEnabledModules</a>( <span>array <var>$enabled_modules</var></span> )</code>
 
 		<div class="description short">
 			
@@ -408,322 +430,10 @@ within a module.</p></dd>
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$className</var></dt>
+					<dt><var>$enabled_modules</var></dt>
 					<dd></dd>
 				</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					string
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="generateORMOwnerProperties" id="_generateORMOwnerProperties">
-
-		<td class="attributes"><code>
-			 protected 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_generateORMOwnerProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#287-311" title="Go to source code">generateORMOwnerProperties</a>( <span>string <var>$className</var></span> )</code>
-
-		<div class="description short">
-			<p>Generate the Owner-properties for extensions.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Generate the Owner-properties for extensions.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$className</var></dt>
-					<dd></dd>
-				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="generateORMDBProperties" id="_generateORMDBProperties">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_generateORMDBProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#314-344" title="Go to source code">generateORMDBProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
-
-		<div class="description short">
-			<p>Generate the $db property values.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Generate the $db property values.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$className</var></dt>
-					<dd></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					string
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="generateORMBelongsToProperties" id="_generateORMBelongsToProperties">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_generateORMBelongsToProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#346-363" title="Go to source code">generateORMBelongsToProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
-
-		<div class="description short">
-			<p>Generate the $belongs_to property values.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Generate the $belongs_to property values.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$className</var></dt>
-					<dd></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					string
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="generateORMHasOneProperties" id="_generateORMHasOneProperties">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_generateORMHasOneProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#365-384" title="Go to source code">generateORMHasOneProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
-
-		<div class="description short">
-			<p>Generate the $has_one property and method values.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Generate the $has_one property and method values.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$className</var></dt>
-					<dd></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					string
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="generateORMHasManyProperties" id="_generateORMHasManyProperties">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_generateORMHasManyProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#386-403" title="Go to source code">generateORMHasManyProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
-
-		<div class="description short">
-			<p>Generate the $has_many method values.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Generate the $has_many method values.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$className</var></dt>
-					<dd></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					string
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="generateORMManyManyProperties" id="_generateORMManyManyProperties">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_generateORMManyManyProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#405-421" title="Go to source code">generateORMManyManyProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
-
-		<div class="description short">
-			<p>Generate the $many_many method values.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Generate the $many_many method values.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$className</var></dt>
-					<dd></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					string
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="generateORMBelongsManyManyProperties" id="_generateORMBelongsManyManyProperties">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_generateORMBelongsManyManyProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#423-439" title="Go to source code">generateORMBelongsManyManyProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
-
-		<div class="description short">
-			<p>Generate the $belongs_many_many method values.</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Generate the $belongs_many_many method values.</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$className</var></dt>
-					<dd></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					string
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="generateORMExtensionsProperties" id="_generateORMExtensionsProperties">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_generateORMExtensionsProperties">#</a>
-		<code><a href="source-class-DataObjectAnnotator.html#441-458" title="Go to source code">generateORMExtensionsProperties</a>( <span>DataObject|DataExtension <var>$className</var></span> )</code>
-
-		<div class="description short">
-			<p>Generate the mixins for DataExtensions</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Generate the mixins for DataExtensions</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$className</var></dt>
-					<dd></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					string
-				</div>
 
 
 
@@ -747,7 +457,7 @@ within a module.</p></dd>
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-DataObjectAnnotator.html#20-23" title="Go to source code"><b>STARTTAG</b></a>
+				<a href="source-class-DataObjectAnnotator.html#19-22" title="Go to source code"><b>STARTTAG</b></a>
 			</code>
 
 			<div class="description short">
@@ -771,7 +481,7 @@ within a module.</p></dd>
 		<td class="attributes"><code>string</code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-DataObjectAnnotator.html#25-28" title="Go to source code"><b>ENDTAG</b></a>
+				<a href="source-class-DataObjectAnnotator.html#24-27" title="Go to source code"><b>ENDTAG</b></a>
 			</code>
 
 			<div class="description short">
@@ -804,7 +514,7 @@ within a module.</p></dd>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#51-64" title="Go to source code"><var>$propertyTypes</var></a>
+				<a href="source-class-DataObjectAnnotator.html#50-63" title="Go to source code"><var>$propertyTypes</var></a>
 
 			<div class="description short">
 				<p>Available properties to generate docblocks for.</p>
@@ -838,7 +548,7 @@ within a module.</p></dd>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#71-75" title="Go to source code"><var>$classes</var></a>
+				<a href="source-class-DataObjectAnnotator.html#70-74" title="Go to source code"><var>$classes</var></a>
 
 			<div class="description short">
 				<p>All classes that subclass DataObject</p>
@@ -856,31 +566,6 @@ within a module.</p></dd>
 			</div>
 		</td>
 	</tr>
-	<tr data-order="extensionClasses" id="$extensionClasses">
-		<td class="attributes"><code>
-			protected  
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#77-81" title="Go to source code"><var>$extensionClasses</var></a>
-
-			<div class="description short">
-				<p>All classes that subclass Object</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>All classes that subclass Object</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$extensionClasses" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
 	<tr data-order="dataExtensions" id="$dataExtensions">
 		<td class="attributes"><code>
 			protected  
@@ -888,7 +573,7 @@ within a module.</p></dd>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#83-88" title="Go to source code"><var>$dataExtensions</var></a>
+				<a href="source-class-DataObjectAnnotator.html#76-80" title="Go to source code"><var>$dataExtensions</var></a>
 
 			<div class="description short">
 				<p>List of all objects, so we can find the extensions.</p>
@@ -906,28 +591,30 @@ within a module.</p></dd>
 			</div>
 		</td>
 	</tr>
-	<tr data-order="resultString" id="$resultString">
+	<tr data-order="phpDocumentorEnabled" id="$phpDocumentorEnabled">
 		<td class="attributes"><code>
-			protected  
-			string
+			public static 
+			boolean
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DataObjectAnnotator.html#90-94" title="Go to source code"><var>$resultString</var></a>
+				<a href="source-class-DataObjectAnnotator.html#82-87" title="Go to source code"><var>$phpDocumentorEnabled</var></a>
 
 			<div class="description short">
-				<p>Overall string for dataset.</p>
+				<p>Temporary flag so we can switch implementations.
+Keep it public for easy checking outside this class.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Overall string for dataset.</p>
+				<p>Temporary flag so we can switch implementations.
+Keep it public for easy checking outside this class.</p>
 
 			</div>
 		</td>
 		<td class="value">
 			<div>
-				<a href="#$resultString" class="anchor">#</a>
-				<code><span class="php-quote">''</span></code>
+				<a href="#$phpDocumentorEnabled" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
 			</div>
 		</td>
 	</tr>

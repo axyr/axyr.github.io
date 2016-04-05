@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class DocBlockGenerator</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-IDEAnnotator.html">
+						IDEAnnotator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-IDEAnnotator.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Extensions.html">
+						Extensions					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Generators.html">
+						Generators					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Helpers.html">
+						Helpers					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Tasks.html">
+						Tasks					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-DocBlockGenerator.html">DocBlockGenerator</a></li>
+				<li><a href="class-DocBlockTagGenerator.html">DocBlockTagGenerator</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class DocBlockGenerator</h1>
+
+
+	<div class="description">
+	<p>Class DocBlockGenerator</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-IDEAnnotator.html">IDEAnnotator</a>\<a href="package-IDEAnnotator.Generators.html">Generators</a><br>
+
+			<b>Located at</b> <a href="source-class-DocBlockGenerator.html#6-154" title="Go to source code">code/Generators/DocBlockGenerator.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-DocBlockGenerator.html#29-39" title="Go to source code">__construct</a>( <span> <var>$className</var></span> )</code>
+
+		<div class="description short">
+			<p>DocBlockGenerator constructor.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>DocBlockGenerator constructor.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$className</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getExistingDocBlock" id="_getExistingDocBlock">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getExistingDocBlock">#</a>
+		<code><a href="source-class-DocBlockGenerator.html#41-54" title="Go to source code">getExistingDocBlock</a>( )</code>
+
+		<div class="description short">
+			<p>Not that in case there are multiple doblocks for a class,
+the last one will be returned</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Not that in case there are multiple doblocks for a class,
+the last one will be returned</p>
+
+<p>If we file old style generated docblocks we remove them</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGeneratedDocBlock" id="_getGeneratedDocBlock">
+
+		<td class="attributes"><code>
+			 public 
+
+			phpDocumentor\Reflection\DocBlock|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGeneratedDocBlock">#</a>
+		<code><a href="source-class-DocBlockGenerator.html#56-62" title="Go to source code">getGeneratedDocBlock</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					phpDocumentor\Reflection\DocBlock|string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getExistingTags" id="_getExistingTags">
+
+		<td class="attributes"><code>
+			 public 
+
+			phpDocumentor\Reflection\DocBlock\Tag
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getExistingTags">#</a>
+		<code><a href="source-class-DocBlockGenerator.html#64-71" title="Go to source code">getExistingTags</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					phpDocumentor\Reflection\DocBlock\Tag
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGeneratedTags" id="_getGeneratedTags">
+
+		<td class="attributes"><code>
+			 public 
+
+			phpDocumentor\Reflection\DocBlock\Tag
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGeneratedTags">#</a>
+		<code><a href="source-class-DocBlockGenerator.html#73-79" title="Go to source code">getGeneratedTags</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					phpDocumentor\Reflection\DocBlock\Tag
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTagsMergedWithExisting" id="_getTagsMergedWithExisting">
+
+		<td class="attributes"><code>
+			 public 
+
+			phpDocumentor\Reflection\DocBlock\Tag
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTagsMergedWithExisting">#</a>
+		<code><a href="source-class-DocBlockGenerator.html#81-87" title="Go to source code">getTagsMergedWithExisting</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					phpDocumentor\Reflection\DocBlock\Tag
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="mergeGeneratedTagsIntoDocBlock" id="_mergeGeneratedTagsIntoDocBlock">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_mergeGeneratedTagsIntoDocBlock">#</a>
+		<code><a href="source-class-DocBlockGenerator.html#89-111" title="Go to source code">mergeGeneratedTagsIntoDocBlock</a>( <span> <var>$existingDocBlock</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$existingDocBlock</var></dt>
+					<dd>string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeOldStyleDocBlock" id="_removeOldStyleDocBlock">
+
+		<td class="attributes"><code>
+			 protected 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeOldStyleDocBlock">#</a>
+		<code><a href="source-class-DocBlockGenerator.html#113-153" title="Go to source code">removeOldStyleDocBlock</a>( <span> <var>$docBlock</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes the unnecessary STARTTAG and ENDTAG
+If they are left behind somehow</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes the unnecessary STARTTAG and ENDTAG
+If they are left behind somehow</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$docBlock</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="className" id="$className">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DocBlockGenerator.html#13-17" title="Go to source code"><var>$className</var></a>
+
+			<div class="description short">
+				<p>The current class we are working with</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The current class we are working with</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$className" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="reflector" id="$reflector">
+		<td class="attributes"><code>
+			protected  
+			ReflectionClass
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DocBlockGenerator.html#19-22" title="Go to source code"><var>$reflector</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$reflector" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="tagGenerator" id="$tagGenerator">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DocBlockGenerator.html#24-27" title="Go to source code"><var>$tagGenerator</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$tagGenerator" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -35,6 +35,11 @@
 
 						</li>
 				<li>
+					<a href="package-IDEAnnotator.Generators.html">
+						Generators					</a>
+
+						</li>
+				<li>
 					<a href="package-IDEAnnotator.Helpers.html">
 						Helpers					</a>
 
@@ -136,7 +141,7 @@ DataExtension
 		
 		<b>Package:</b> <a href="package-IDEAnnotator.html">IDEAnnotator</a>\<a href="package-IDEAnnotator.Extensions.html">Extensions</a><br>
 
-			<b>Located at</b> <a href="source-class-Annotatable.html#3-104" title="Go to source code">code/Extensions/Annotatable.php</a>
+			<b>Located at</b> <a href="source-class-Annotatable.html#3-113" title="Go to source code">code/Extensions/Annotatable.php</a>
 		<br>
 	</div>
 
@@ -144,7 +149,7 @@ DataExtension
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+	<tr data-order="setUp" id="_setUp">
 
 		<td class="attributes"><code>
 			 public 
@@ -155,17 +160,17 @@ DataExtension
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Annotatable.html#26-35" title="Go to source code">__construct</a>( )</code>
+		<a class="anchor" href="#_setUp">#</a>
+		<code><a href="source-class-Annotatable.html#34-42" title="Go to source code">setUp</a>( )</code>
 
 		<div class="description short">
-			<p>Annotatable constructor.
-I'm unsure if setting these on construct is a good idea. It might cause higher memory usage.</p>
+			<p>Annotatable setup.
+This is theoratically a constructor, but to save memory we're using setup called from <code><a href="class-Annotatable.html#_requireDefaultRecords">Annotatable::requireDefaultRecords()</a></code></p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Annotatable constructor.
-I'm unsure if setting these on construct is a good idea. It might cause higher memory usage.</p>
+			<p>Annotatable setup.
+This is theoratically a constructor, but to save memory we're using setup called from <code><a href="class-Annotatable.html#_requireDefaultRecords">Annotatable::requireDefaultRecords()</a></code></p>
 
 
 
@@ -188,7 +193,7 @@ I'm unsure if setting these on construct is a good idea. It might cause higher m
 
 		<td class="name"><div>
 		<a class="anchor" href="#_flush">#</a>
-		<code><a href="source-class-Annotatable.html#37-49" title="Go to source code">flush</a>( )</code>
+		<code><a href="source-class-Annotatable.html#44-56" title="Go to source code">flush</a>( )</code>
 
 		<div class="description short">
 			<p>After the request, generate the docs.</p>
@@ -221,7 +226,7 @@ I'm unsure if setting these on construct is a good idea. It might cause higher m
 
 		<td class="name"><div>
 		<a class="anchor" href="#_requireDefaultRecords">#</a>
-		<code><a href="source-class-Annotatable.html#51-71" title="Go to source code">requireDefaultRecords</a>( )</code>
+		<code><a href="source-class-Annotatable.html#58-80" title="Go to source code">requireDefaultRecords</a>( )</code>
 
 		<div class="description short">
 			<p>This is the base function on which annotations are started.</p>
@@ -309,6 +314,35 @@ I'm unsure if setting these on construct is a good idea. It might cause higher m
 			<div>
 				<a href="#$permissionChecker" class="anchor">#</a>
 				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="annotated_extensions" id="$annotated_extensions">
+		<td class="attributes"><code>
+			public static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Annotatable.html#26-32" title="Go to source code"><var>$annotated_extensions</var></a>
+
+			<div class="description short">
+				<p>Keep track ot the annotation actions for extensions
+An Extension can belong to many DataObjects.
+This prevents that an Extension is ran twice on dev/build</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Keep track ot the annotation actions for extensions
+An Extension can belong to many DataObjects.
+This prevents that an Extension is ran twice on dev/build</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$annotated_extensions" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
 			</div>
 		</td>
 	</tr>
