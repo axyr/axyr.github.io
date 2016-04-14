@@ -59,8 +59,10 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-AbstractTagGenerator.html">AbstractTagGenerator</a></li>
+				<li><a href="class-ControllerTagGenerator.html">ControllerTagGenerator</a></li>
 				<li class="active"><a href="class-DocBlockGenerator.html">DocBlockGenerator</a></li>
-				<li><a href="class-DocBlockTagGenerator.html">DocBlockTagGenerator</a></li>
+				<li><a href="class-OrmTagGenerator.html">OrmTagGenerator</a></li>
 			</ul>
 
 
@@ -124,7 +126,7 @@
 		
 		<b>Package:</b> <a href="package-IDEAnnotator.html">IDEAnnotator</a>\<a href="package-IDEAnnotator.Generators.html">Generators</a><br>
 
-			<b>Located at</b> <a href="source-class-DocBlockGenerator.html#6-154" title="Go to source code">code/Generators/DocBlockGenerator.php</a>
+			<b>Located at</b> <a href="source-class-DocBlockGenerator.html#7-193" title="Go to source code">code/Generators/DocBlockGenerator.php</a>
 		<br>
 	</div>
 
@@ -144,7 +146,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-DocBlockGenerator.html#29-39" title="Go to source code">__construct</a>( <span> <var>$className</var></span> )</code>
+		<code><a href="source-class-DocBlockGenerator.html#30-44" title="Go to source code">__construct</a>( <span> <var>$className</var></span> )</code>
 
 		<div class="description short">
 			<p>DocBlockGenerator constructor.</p>
@@ -179,7 +181,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getExistingDocBlock">#</a>
-		<code><a href="source-class-DocBlockGenerator.html#41-54" title="Go to source code">getExistingDocBlock</a>( )</code>
+		<code><a href="source-class-DocBlockGenerator.html#46-57" title="Go to source code">getExistingDocBlock</a>( )</code>
 
 		<div class="description short">
 			<p>Not that in case there are multiple doblocks for a class,
@@ -217,7 +219,7 @@ the last one will be returned</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getGeneratedDocBlock">#</a>
-		<code><a href="source-class-DocBlockGenerator.html#56-62" title="Go to source code">getGeneratedDocBlock</a>( )</code>
+		<code><a href="source-class-DocBlockGenerator.html#59-67" title="Go to source code">getGeneratedDocBlock</a>( )</code>
 
 		<div class="description short">
 			
@@ -251,7 +253,7 @@ the last one will be returned</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getExistingTags">#</a>
-		<code><a href="source-class-DocBlockGenerator.html#64-71" title="Go to source code">getExistingTags</a>( )</code>
+		<code><a href="source-class-DocBlockGenerator.html#69-78" title="Go to source code">getExistingTags</a>( )</code>
 
 		<div class="description short">
 			
@@ -285,7 +287,7 @@ the last one will be returned</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getGeneratedTags">#</a>
-		<code><a href="source-class-DocBlockGenerator.html#73-79" title="Go to source code">getGeneratedTags</a>( )</code>
+		<code><a href="source-class-DocBlockGenerator.html#80-86" title="Go to source code">getGeneratedTags</a>( )</code>
 
 		<div class="description short">
 			
@@ -312,14 +314,14 @@ the last one will be returned</p>
 		<td class="attributes"><code>
 			 public 
 
-			phpDocumentor\Reflection\DocBlock\Tag
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTagsMergedWithExisting">#</a>
-		<code><a href="source-class-DocBlockGenerator.html#81-87" title="Go to source code">getTagsMergedWithExisting</a>( )</code>
+		<code><a href="source-class-DocBlockGenerator.html#88-124" title="Go to source code">getTagsMergedWithExisting</a>( )</code>
 
 		<div class="description short">
 			
@@ -332,7 +334,7 @@ the last one will be returned</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					phpDocumentor\Reflection\DocBlock\Tag
+					array
 				</div>
 
 
@@ -353,7 +355,7 @@ the last one will be returned</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_mergeGeneratedTagsIntoDocBlock">#</a>
-		<code><a href="source-class-DocBlockGenerator.html#89-111" title="Go to source code">mergeGeneratedTagsIntoDocBlock</a>( <span> <var>$existingDocBlock</var></span> )</code>
+		<code><a href="source-class-DocBlockGenerator.html#126-148" title="Go to source code">mergeGeneratedTagsIntoDocBlock</a>( <span>string <var>$existingDocBlock</var></span> )</code>
 
 		<div class="description short">
 			
@@ -366,7 +368,7 @@ the last one will be returned</p>
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$existingDocBlock</var></dt>
-					<dd>string</dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -392,7 +394,7 @@ the last one will be returned</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeOldStyleDocBlock">#</a>
-		<code><a href="source-class-DocBlockGenerator.html#113-153" title="Go to source code">removeOldStyleDocBlock</a>( <span> <var>$docBlock</var></span> )</code>
+		<code><a href="source-class-DocBlockGenerator.html#150-192" title="Go to source code">removeOldStyleDocBlock</a>( <span> <var>$docBlock</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes the unnecessary STARTTAG and ENDTAG
@@ -443,7 +445,7 @@ If they are left behind somehow</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DocBlockGenerator.html#13-17" title="Go to source code"><var>$className</var></a>
+				<a href="source-class-DocBlockGenerator.html#14-18" title="Go to source code"><var>$className</var></a>
 
 			<div class="description short">
 				<p>The current class we are working with</p>
@@ -468,7 +470,7 @@ If they are left behind somehow</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DocBlockGenerator.html#19-22" title="Go to source code"><var>$reflector</var></a>
+				<a href="source-class-DocBlockGenerator.html#20-23" title="Go to source code"><var>$reflector</var></a>
 
 			<div class="description short">
 				
@@ -493,7 +495,7 @@ If they are left behind somehow</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DocBlockGenerator.html#24-27" title="Go to source code"><var>$tagGenerator</var></a>
+				<a href="source-class-DocBlockGenerator.html#25-28" title="Go to source code"><var>$tagGenerator</var></a>
 
 			<div class="description short">
 				

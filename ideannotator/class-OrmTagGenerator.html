@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class OrmTagGenerator</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-IDEAnnotator.html">
+						IDEAnnotator<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-IDEAnnotator.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Extensions.html">
+						Extensions					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Generators.html">
+						Generators					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Helpers.html">
+						Helpers					</a>
+
+						</li>
+				<li>
+					<a href="package-IDEAnnotator.Tasks.html">
+						Tasks					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AbstractTagGenerator.html">AbstractTagGenerator</a></li>
+				<li><a href="class-ControllerTagGenerator.html">ControllerTagGenerator</a></li>
+				<li><a href="class-DocBlockGenerator.html">DocBlockGenerator</a></li>
+				<li class="active"><a href="class-OrmTagGenerator.html">OrmTagGenerator</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class OrmTagGenerator</h1>
+
+
+	<div class="description">
+	<p>OrmTagGenerator</p>
+
+<p>This class generates DocBlock Tags for the ORM properties of a Dataobject of DataExtension
+and adds $owner Tags for added DataExtensions</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-AbstractTagGenerator.html"><span>AbstractTagGenerator</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>OrmTagGenerator</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-IDEAnnotator.html">IDEAnnotator</a>\<a href="package-IDEAnnotator.Generators.html">Generators</a><br>
+
+			<b>Located at</b> <a href="source-class-OrmTagGenerator.html#3-124" title="Go to source code">code/Generators/OrmTagGenerator.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="generateTags" id="_generateTags">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateTags">#</a>
+		<code><a href="source-class-OrmTagGenerator.html#28-37" title="Go to source code">generateTags</a>( )</code>
+
+		<div class="description short">
+			<p>Generates all ORM Tags</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generates all ORM Tags</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateDBTags" id="_generateDBTags">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateDBTags">#</a>
+		<code><a href="source-class-OrmTagGenerator.html#39-61" title="Go to source code">generateDBTags</a>( )</code>
+
+		<div class="description short">
+			<p>Generate the $db property values.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate the $db property values.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateBelongsToTags" id="_generateBelongsToTags">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateBelongsToTags">#</a>
+		<code><a href="source-class-OrmTagGenerator.html#63-73" title="Go to source code">generateBelongsToTags</a>( )</code>
+
+		<div class="description short">
+			<p>Generate the $belongs_to property values.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate the $belongs_to property values.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateHasOneTags" id="_generateHasOneTags">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateHasOneTags">#</a>
+		<code><a href="source-class-OrmTagGenerator.html#75-86" title="Go to source code">generateHasOneTags</a>( )</code>
+
+		<div class="description short">
+			<p>Generate the $has_one property and method values.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate the $has_one property and method values.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateHasManyTags" id="_generateHasManyTags">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateHasManyTags">#</a>
+		<code><a href="source-class-OrmTagGenerator.html#88-94" title="Go to source code">generateHasManyTags</a>( )</code>
+
+		<div class="description short">
+			<p>Generate the $has_many method values.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate the $has_many method values.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateManyManyTags" id="_generateManyManyTags">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateManyManyTags">#</a>
+		<code><a href="source-class-OrmTagGenerator.html#96-102" title="Go to source code">generateManyManyTags</a>( )</code>
+
+		<div class="description short">
+			<p>Generate the $many_many method values.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate the $many_many method values.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateBelongsManyManyTags" id="_generateBelongsManyManyTags">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateBelongsManyManyTags">#</a>
+		<code><a href="source-class-OrmTagGenerator.html#104-110" title="Go to source code">generateBelongsManyManyTags</a>( )</code>
+
+		<div class="description short">
+			<p>Generate the $belongs_many_many method values.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate the $belongs_many_many method values.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateTagsForDataLists" id="_generateTagsForDataLists">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateTagsForDataLists">#</a>
+		<code><a href="source-class-OrmTagGenerator.html#112-123" title="Go to source code">generateTagsForDataLists</a>( <span>array <var>$fields</var></span>, <span>string <var>$listType</var> = <span class="php-quote">'DataList'</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd></dd>
+					<dt><var>$listType</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-AbstractTagGenerator.html#methods">AbstractTagGenerator</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-AbstractTagGenerator.html#___construct">__construct()</a>, 
+			<a href="class-AbstractTagGenerator.html#_generateExtensionsTags">generateExtensionsTags()</a>, 
+			<a href="class-AbstractTagGenerator.html#_generateOwnerTags">generateOwnerTags()</a>, 
+			<a href="class-AbstractTagGenerator.html#_getClassConfig">getClassConfig()</a>, 
+			<a href="class-AbstractTagGenerator.html#_getSupportedTagTypes">getSupportedTagTypes()</a>, 
+			<a href="class-AbstractTagGenerator.html#_getTags">getTags()</a>, 
+			<a href="class-AbstractTagGenerator.html#_getTagsAsString">getTagsAsString()</a>, 
+			<a href="class-AbstractTagGenerator.html#_pushMethodTag">pushMethodTag()</a>, 
+			<a href="class-AbstractTagGenerator.html#_pushMixinTag">pushMixinTag()</a>, 
+			<a href="class-AbstractTagGenerator.html#_pushPropertyTag">pushPropertyTag()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="propertyTypes" id="$propertyTypes">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-OrmTagGenerator.html#13-26" title="Go to source code"><var>$propertyTypes</var></a>
+
+			<div class="description short">
+				<p>Available properties to generate docblocks for.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Available properties to generate docblocks for.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$propertyTypes" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(
+    <span class="php-quote">'Owner'</span>,
+    <span class="php-quote">'DB'</span>,
+    <span class="php-quote">'HasOne'</span>,
+    <span class="php-quote">'BelongsTo'</span>,
+    <span class="php-quote">'HasMany'</span>,
+    <span class="php-quote">'ManyMany'</span>,
+    <span class="php-quote">'BelongsManyMany'</span>,
+    <span class="php-quote">'Extensions'</span>,
+)</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-AbstractTagGenerator.html#properties">AbstractTagGenerator</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-AbstractTagGenerator.html#$className"><var>$className</var></a>, 
+			<a href="class-AbstractTagGenerator.html#$extensionClasses"><var>$extensionClasses</var></a>, 
+			<a href="class-AbstractTagGenerator.html#$reflector"><var>$reflector</var></a>, 
+			<a href="class-AbstractTagGenerator.html#$tags"><var>$tags</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
